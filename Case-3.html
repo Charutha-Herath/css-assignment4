@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic rotation</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+        :root{
+            --width: 100px;
+            --height: 100px;
+        }
+        div{
+            /*width: var(--width);
+            height: var(--width);*/
+
+
+
+            width: 200px;
+            height: 120px;
+            border-radius: 20px;
+            background-color: orange;
+
+            animation: my-animation 4s infinite;
+            /*
+            animation-name: my-animation;
+            animation-duration: 4s;
+            */
+
+
+            /*
+            animation: ani ;
+            */
+        }
+
+        @keyframes my-animation {
+
+
+            0%{
+
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(-180deg);
+
+                background-color: orange;
+
+                /*transform: rotate(0deg);
+                transform: scaleX(100%);*/
+
+
+            }
+            25%{
+                margin-left: calc(100vw - 200px);
+                margin-top: 0;
+
+                transform: rotate(180deg);
+                background-color: black;
+            }
+
+            50%{
+                margin-left: calc(100vw - 200px);
+                margin-top: calc(100vh - 120px);
+
+                transform: rotate(-180deg);
+
+                background-color: powderblue;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - 120px);
+
+                transform: rotate(180deg);
+
+                background-color: hotpink;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

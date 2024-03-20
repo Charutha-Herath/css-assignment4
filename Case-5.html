@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+
+    <style>
+        main>section{
+            display: flex;
+            width: 200vw;
+
+            animation: ani 10s infinite;
+        }
+
+        main{
+            width: 50vw;
+            height: 50vh;
+
+            border: #ff253a solid 2px;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            margin: auto;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        main>section>div{
+            width: 50vw;
+            height: 50vh;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation-delay: initial;
+        }
+
+        main>section>div:first-child{
+            background-image: url("assets/slides/slide1.jpeg");
+        }
+        main>section>div:nth-child(2){
+            background-image: url("assets/slides/slide2.jpeg");
+        }
+        main>section>div:nth-child(3){
+            background-image: url("assets/slides/slide3.jpeg");
+        }
+        main>section>div:nth-child(4){
+            background-image: url("assets/slides/slide4.jpeg");
+        }
+
+        @keyframes ani {
+            0%,25%{
+                transform: translateX(0%);
+            }
+            30%,45%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            75%,95%{
+                transform: translateX(-75%);
+            }
+        }
+
+        /* .slider {
+           width: 100%;
+           overflow: hidden;
+           position: relative;
+         }
+
+         .slide {
+           width: 100%;
+           display: none;
+           position: absolute;
+           animation: slide 10s infinite;
+         }
+
+         .slide img {
+           width: 100%;
+           height: auto;
+         }
+
+         @keyframes slide {
+           0% { left: 0; opacity: 1; }
+           25% { opacity: 1; }
+           50% { opacity: 1; }
+           75% { opacity: 1; }
+           100% { left: -100%; opacity: 0; }
+         }*/
+    </style>
+</head>
+<body>
+
+<!--<div class="slider">
+  <div class="slide">
+    <img src="assets/slides/slide1.jpeg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="assets/slides/slide2.jpeg" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="assets/slides/slide3.jpeg" alt="Image 3">
+  </div>
+</div>-->
+<main>
+    <section>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </section>
+</main>
+<script src="assets/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+</body>
+</html>
