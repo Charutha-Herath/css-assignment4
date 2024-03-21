@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car animation</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        #main1>div:first-child{
+            width: 100vw;
+            height: 60vh;
+
+            /*background-position: center;*/
+            /*background-size: cover;*/
+
+            background-image: url("assets/image/car animation/sky.jpg");
+
+            position: relative;
+
+        }
+        main>div:nth-child(2){
+            /*animation: move-road 4s infinite linear;*/
+        }
+
+        main>div:nth-child(2)>div:first-child{
+            width: 100vw;
+            height: 40vh;
+
+            background-image: url("assets/image/car animation/road.jpg");
+        }
+        main>div:nth-child(2)>div:nth-child(2){
+            width: 100vw;
+            height: 40vh;
+
+            background-image: url("assets/image/car animation/road.jpg");
+        }
+
+        main>div:nth-child(3){
+            width: 400px;
+            height: 150px;
+
+            background-size: cover;
+
+            background-image: url("assets/image/car animation/car.png");
+
+            bottom: 28%;
+
+            left: 40%;
+            position: absolute;
+        }
+
+        main>div:nth-child(4){
+            width: 74px;
+            aspect-ratio: 1/1;
+
+
+            background-size: cover;
+            background-image: url("assets/image/car animation/wheel.png");
+
+            left: 42.3%;
+            bottom: 26.2%;
+
+            position: absolute;
+
+            animation: my-animation 4s infinite linear;
+        }
+
+        main>div:nth-child(5){
+            width: 74px;
+            aspect-ratio: 1/1;
+
+
+            background-size: cover;
+            background-image: url("assets/image/car animation/wheel.png");
+
+            left: 58.8%;
+            bottom: 26.2%;
+
+            position: absolute;
+
+            animation: my-animation 4s infinite linear;
+        }
+
+        main>div>div{
+            width: 100vw;
+            height: 35vh;
+            bottom: 0;
+            background-image: url("assets/image/car animation/city.png");
+
+            position: absolute;
+        }
+
+        @keyframes my-animation {
+
+
+            from {
+                transform: rotate(-360deg);
+
+            }
+            to {
+                /*transform: rotate(180deg);*/
+
+            }
+
+        }
+        @keyframes move-road {
+            from{
+                transform: translateX(0%);
+            }to{
+                transform: translateX(100%);
+            }
+        }
+        #main2{
+        }
+        /*#main1>div{
+            width: 400px;
+            height: 150px;
+
+            background-size: cover;
+
+            background-image: url("assets/image/car animation/car.png");
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            position: absolute;
+        }*/
+    </style>
+</head>
+<body>
+<!--<main id="main2">
+    <div>
+
+    </div>
+</main>-->
+<main id="main1">
+
+
+    <div>
+        <div></div>
+    </div>
+
+    <div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+</main>
+</body>
+</html>
