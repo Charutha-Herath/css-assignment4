@@ -19,22 +19,31 @@
             position: relative;
 
         }
+
+        main{
+
+        }
         main>div:nth-child(2){
             /*animation: move-road 4s infinite linear;*/
         }
 
         main>div:nth-child(2)>div:first-child{
-            width: 100vw;
+            width: 500%;
             height: 40vh;
+            bottom: 0;
+            display: block;
 
             background-image: url("assets/image/car animation/road.jpg");
+
+            position: absolute;
         }
-        main>div:nth-child(2)>div:nth-child(2){
+        /*main>div:nth-child(2)>div:nth-child(2){
             width: 100vw;
             height: 40vh;
+            left: 100vw;
 
             background-image: url("assets/image/car animation/road.jpg");
-        }
+        }*/
 
         main>div:nth-child(3){
             width: 400px;
@@ -50,7 +59,7 @@
             position: absolute;
         }
 
-        main>div:nth-child(4){
+        main>div:nth-child(4)  {
             width: 74px;
             aspect-ratio: 1/1;
 
@@ -60,10 +69,11 @@
 
             left: 42.3%;
             bottom: 26.2%;
+            margin: auto;
 
             position: absolute;
 
-            animation: my-animation 4s infinite linear;
+            animation: my-animation 5s infinite linear;
         }
 
         main>div:nth-child(5){
@@ -76,19 +86,26 @@
 
             left: 58.8%;
             bottom: 26.2%;
+            margin: auto;
 
             position: absolute;
 
-            animation: my-animation 4s infinite linear;
+            animation: my-animation 5s infinite linear;
         }
 
         main>div>div{
-            width: 100vw;
+            width: 500%;
             height: 35vh;
             bottom: 0;
+            display: block;
             background-image: url("assets/image/car animation/city.png");
 
             position: absolute;
+
+            animation: city 15s infinite linear;
+        }
+        main>div{
+
         }
 
         @keyframes my-animation {
@@ -109,6 +126,11 @@
                 transform: translateX(0%);
             }to{
                 transform: translateX(100%);
+            }
+        }
+        @keyframes city {
+            100%{
+                transform : translateX(-1400px);
             }
         }
         #main2{
@@ -145,7 +167,7 @@
 
     <div>
         <div></div>
-        <div></div>
+        <!--<div></div>-->
     </div>
 
     <div></div>
